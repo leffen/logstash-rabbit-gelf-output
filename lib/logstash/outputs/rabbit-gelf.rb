@@ -3,8 +3,8 @@ require "logstash/outputs/base"
 require "logstash/namespace"
 
 # An example output that does nothing.
-class LogStash::Outputs::Example < LogStash::Outputs::Base
-  config_name "example"
+class LogStash::Outputs::RabbitGelf < LogStash::Outputs::Base
+  config_name "rabbit-gelf"
 
   public
   def register
